@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Globe2, Mail, MapPin, Phone } from "lucide-react";
+import BackdropSection from "../components/BackdropSection";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -11,9 +12,9 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="bg-paper px-4 py-14 lg:px-8 lg:py-20">
+    <BackdropSection as="main" variant={4} className="px-4 py-14 lg:px-8 lg:py-20">
       <section className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.9fr_1.1fr]">
-        <div>
+        <div className="paper-panel rounded-[28px] p-6 shadow-lotus sm:p-8">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-lotusGold">Liên hệ</p>
           <h1 className="mt-4 font-serif text-5xl font-bold text-lotusGreen">Kết nối với Hương Sen</h1>
           <p className="mt-5 leading-8 text-textDarkGreen/76">
@@ -59,6 +60,6 @@ export default function ContactPage() {
           {sent && <p className="mt-4 rounded-2xl bg-lotusGreen/10 p-4 font-semibold text-lotusGreen">Cảm ơn quý khách đã liên hệ với Hương Sen.</p>}
         </form>
       </section>
-    </main>
+    </BackdropSection>
   );
 }

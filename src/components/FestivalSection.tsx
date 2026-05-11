@@ -1,12 +1,13 @@
 import { Gift, MapPin, Sparkles, Truck, Utensils } from "lucide-react";
 import festivalBooth from "../assets/images/FestivalBooth2026.png";
+import BackdropSection from "./BackdropSection";
 
 const highlights = ["Nhiều ưu đãi hấp dẫn", "Quà tặng khi mua hàng", "Dùng thử miễn phí", "Giao hàng nhanh tại lễ hội"];
 const icons = [Sparkles, Gift, Utensils, Truck];
 
 export default function FestivalSection() {
   return (
-    <section id="le-hoi" className="bg-lightCream px-4 py-16 lg:px-8 lg:py-24">
+    <BackdropSection id="le-hoi" variant={3} className="px-4 py-16 lg:px-8 lg:py-24" overlay="soft">
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[28px] bg-deepGreen shadow-lotus lg:grid-cols-[1.05fr_.95fr]">
         <div className="p-7 text-white sm:p-10 lg:p-14">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-softGold">Summer Fest 2026</p>
@@ -41,6 +42,6 @@ export default function FestivalSection() {
           </div>
         </div>
       </div>
-    </section>
+    </BackdropSection>
   );
 }

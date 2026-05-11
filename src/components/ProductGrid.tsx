@@ -1,9 +1,10 @@
 import { products } from "../data/products";
+import BackdropSection from "./BackdropSection";
 import ProductCard from "./ProductCard";
 
 export default function ProductGrid() {
   return (
-    <section id="san-pham" className="bg-lightCream px-4 py-16 lg:px-8 lg:py-24">
+    <BackdropSection id="san-pham" variant={2} className="px-4 py-16 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-lotusGold">SẢN PHẨM NỔI BẬT</p>
@@ -16,6 +17,6 @@ export default function ProductGrid() {
           ))}
         </div>
       </div>
-    </section>
+    </BackdropSection>
   );
 }

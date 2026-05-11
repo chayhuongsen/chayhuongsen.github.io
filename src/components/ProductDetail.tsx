@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import logoHuongSen from "../assets/images/LogoHuongSenOK.png";
 import type { Product } from "../data/products";
 import { products } from "../data/products";
+import BackdropSection from "./BackdropSection";
 import ProductCard from "./ProductCard";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const related = products.filter((item) => item.slug !== product.slug).slice(0, 3);
 
   return (
-    <main className="bg-paper px-4 py-10 lg:px-8 lg:py-16">
+    <BackdropSection as="main" variant={1} className="px-4 py-10 lg:px-8 lg:py-16">
       <article className="ornate-frame paper-panel mx-auto max-w-5xl rounded-[30px] p-5 shadow-lotus sm:p-8 lg:p-12">
         <div className="text-center">
           <div className="mx-auto flex items-center justify-center gap-3 text-lotusGreen">
@@ -69,6 +70,6 @@ export default function ProductDetail({ product }: { product: Product }) {
           ))}
         </div>
       </section>
-    </main>
+    </BackdropSection>
   );
 }

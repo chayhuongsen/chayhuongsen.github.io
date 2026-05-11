@@ -1,13 +1,14 @@
 import { Leaf, ShieldCheck, Sparkles } from "lucide-react";
+import BackdropSection from "../components/BackdropSection";
 import LotusDecoration from "../components/LotusDecoration";
 import { products } from "../data/products";
 
 export default function AboutPage() {
   return (
-    <main className="relative overflow-hidden bg-paper px-4 py-14 lg:px-8 lg:py-20">
+    <BackdropSection as="main" variant={1} className="px-4 py-14 lg:px-8 lg:py-20">
       <LotusDecoration className="right-8 top-20 h-44 w-44 text-lotusGreen/20" />
       <section className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[.95fr_1.05fr]">
-        <div>
+        <div className="paper-panel rounded-[28px] p-6 shadow-lotus sm:p-8">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-lotusGold">Giới thiệu</p>
           <h1 className="mt-4 font-serif text-5xl font-bold leading-tight text-lotusGreen">Câu chuyện Hương Sen</h1>
           <p className="mt-5 leading-8 text-textDarkGreen/78">
@@ -55,6 +56,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-    </main>
+    </BackdropSection>
   );
 }
