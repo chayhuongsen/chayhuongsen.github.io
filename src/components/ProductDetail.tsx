@@ -25,6 +25,18 @@ export default function ProductDetail({ product }: { product: Product }) {
         <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-[28px] border border-borderGold/60 bg-lightCream p-3 shadow-gold">
           <img src={product.image} alt={product.name} className="aspect-[4/3] w-full rounded-[22px] object-cover" />
         </div>
+        <section className="mx-auto mt-8 max-w-3xl">
+          <p className="text-center text-sm font-bold uppercase tracking-[0.26em] text-lotusGold">Tờ giới thiệu sản phẩm</p>
+          <div className="mt-4 overflow-hidden rounded-[28px] border border-borderGold/60 bg-lightCream shadow-lotus">
+            <div className="relative aspect-[745/1055] w-full overflow-hidden">
+              <img
+                src={product.menuImage}
+                alt={`Tờ giới thiệu ${product.name}`}
+                className={`absolute top-0 h-full max-w-none object-cover ${product.menuSide === "left" ? "left-0 w-[200%]" : "right-0 w-[200%]"}`}
+              />
+            </div>
+          </div>
+        </section>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {[
             ["Thành phần", product.ingredients],

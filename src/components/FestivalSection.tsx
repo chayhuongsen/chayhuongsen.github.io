@@ -1,5 +1,5 @@
 import { Gift, MapPin, Sparkles, Truck, Utensils } from "lucide-react";
-import brochure from "../assets/images/BrochureCovers.svg";
+import brochure from "../assets/images/BrochureCovers.png";
 
 const highlights = ["Nhiều ưu đãi hấp dẫn", "Quà tặng khi mua hàng", "Dùng thử miễn phí", "Giao hàng nhanh tại lễ hội"];
 const icons = [Sparkles, Gift, Utensils, Truck];
