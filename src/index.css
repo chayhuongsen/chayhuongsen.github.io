@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #063c2d;
+  background: #fff6e3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", Arial, sans-serif;
+  background:
+    linear-gradient(rgba(255, 249, 236, 0.92), rgba(255, 246, 227, 0.94)),
+    repeating-linear-gradient(35deg, rgba(200, 138, 26, 0.06) 0 1px, transparent 1px 14px);
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paper-panel {
+  background:
+    linear-gradient(145deg, rgba(255, 249, 236, 0.96), rgba(255, 246, 227, 0.92)),
+    repeating-linear-gradient(90deg, rgba(200, 138, 26, 0.05) 0 1px, transparent 1px 18px);
+  border: 1px solid rgba(214, 165, 58, 0.46);
+}
+
+.ornate-frame {
+  position: relative;
+}
+
+.ornate-frame::before,
+.ornate-frame::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-color: rgba(200, 138, 26, 0.62);
+  pointer-events: none;
+}
+
+.ornate-frame::before {
+  left: 14px;
+  top: 14px;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-radius: 22px 0 0;
+}
+
+.ornate-frame::after {
+  right: 14px;
+  bottom: 14px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-radius: 0 0 22px;
+}
+
+.lotus-watermark {
+  position: absolute;
+  inset: auto -36px -48px auto;
+  width: 190px;
+  height: 190px;
+  opacity: 0.09;
+  background: radial-gradient(ellipse at center, #064e3b 0 8%, transparent 9%),
+    conic-gradient(from 0deg, transparent 0 8%, #064e3b 8% 15%, transparent 15% 24%, #064e3b 24% 31%, transparent 31% 100%);
+  border-radius: 50%;
+}
