@@ -1,7 +1,7 @@
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { LotusMark } from "./LotusDecoration";
+import logoHuongSen from "../assets/images/LogoHuongSen.png";
 import OrderModal from "./OrderModal";
 
 const navItems = [
@@ -21,8 +21,8 @@ export default function Header() {
       <header className="sticky top-0 z-50 border-b border-borderGold/35 bg-lightCream/90 shadow-sm backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
           <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <span className="grid h-11 w-11 place-items-center rounded-full border border-borderGold bg-lotusGreen text-softGold shadow-gold">
-              <LotusMark className="h-7 w-7" />
+            <span className="grid h-12 w-12 place-items-center rounded-full border border-borderGold bg-lotusGreen/95 p-1.5 shadow-gold">
+              <img src={logoHuongSen} alt="Logo Hương Sen" className="h-full w-full object-contain" />
             </span>
             <span>
               <span className="block font-serif text-2xl font-bold leading-none tracking-wide text-lotusGreen">HƯƠNG SEN</span>

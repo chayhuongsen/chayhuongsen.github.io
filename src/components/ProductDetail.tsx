@@ -1,8 +1,8 @@
 import { ArrowLeft, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoHuongSen from "../assets/images/LogoHuongSen.png";
 import type { Product } from "../data/products";
 import { products } from "../data/products";
-import { LotusMark } from "./LotusDecoration";
 import ProductCard from "./ProductCard";
 
 export default function ProductDetail({ product }: { product: Product }) {
@@ -13,7 +13,9 @@ export default function ProductDetail({ product }: { product: Product }) {
       <article className="ornate-frame paper-panel mx-auto max-w-5xl rounded-[30px] p-5 shadow-lotus sm:p-8 lg:p-12">
         <div className="text-center">
           <div className="mx-auto flex items-center justify-center gap-3 text-lotusGreen">
-            <LotusMark className="h-10 w-10 text-lotusGold" />
+            <span className="grid h-12 w-12 place-items-center rounded-full bg-lotusGreen p-1.5 shadow-gold">
+              <img src={logoHuongSen} alt="Logo Hương Sen" className="h-full w-full object-contain" />
+            </span>
             <span className="font-serif text-2xl font-bold">HƯƠNG SEN</span>
           </div>
           <span className="mx-auto mt-5 grid h-16 w-16 place-items-center rounded-full bg-lotusGreen font-serif text-3xl font-bold text-softGold shadow-gold">

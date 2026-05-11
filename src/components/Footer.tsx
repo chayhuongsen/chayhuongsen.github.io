@@ -1,5 +1,5 @@
 import { Facebook, Mail, MapPin, Phone, Youtube } from "lucide-react";
-import { LotusMark } from "./LotusDecoration";
+import logoHuongSen from "../assets/images/LogoHuongSen.png";
 
 export default function Footer() {
   return (
@@ -8,7 +8,9 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 lg:px-8">
         <div>
           <div className="flex items-center gap-3 text-softGold">
-            <LotusMark className="h-12 w-12" />
+            <span className="grid h-14 w-14 place-items-center rounded-full border border-softGold/50 bg-white/8 p-1.5">
+              <img src={logoHuongSen} alt="Logo Hương Sen" className="h-full w-full object-contain" />
+            </span>
             <span className="font-serif text-3xl font-bold text-white">HƯƠNG SEN</span>
           </div>
           <p className="mt-4 leading-7 text-white/76">
