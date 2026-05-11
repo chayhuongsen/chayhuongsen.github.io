@@ -1,5 +1,5 @@
 import { Gift, MapPin, Sparkles, Truck, Utensils } from "lucide-react";
-import brochure from "../assets/images/BrochureCovers.png";
+import festivalBooth from "../assets/images/FestivalBooth2026.png";
 
 const highlights = ["Nhiều ưu đãi hấp dẫn", "Quà tặng khi mua hàng", "Dùng thử miễn phí", "Giao hàng nhanh tại lễ hội"];
 const icons = [Sparkles, Gift, Utensils, Truck];
@@ -30,7 +30,7 @@ export default function FestivalSection() {
           </a>
         </div>
         <div className="relative bg-lotusGreen/48 p-7 sm:p-10">
-          <img src={brochure} alt="Brochure Hương Sen tại lễ hội" className="rounded-[24px] border border-softGold/50 shadow-gold" />
+          <img src={festivalBooth} alt="Gian hàng Hương Sen tại Summer Fest 2026" className="rounded-[24px] border border-softGold/50 shadow-gold" />
           <div className="mt-6 rounded-[24px] border border-softGold/45 bg-lightCream p-5 text-textDarkGreen shadow-gold">
             <p className="font-serif text-2xl font-bold text-lotusGreen">Thông tin lễ hội</p>
             <div className="mt-3 space-y-2 text-sm leading-6">
