@@ -1,43 +1,38 @@
-import { Facebook, Mail, MapPin, Phone, Youtube } from "lucide-react";
-import logoHuongSen from "../assets/images/LogoHuongSen.png";
+import { Mail, MapPin, Phone } from "lucide-react";
+import logoHuongSen from "../assets/images/LogoHuongSenOK.png";
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-deepGreen text-white">
       <div className="lotus-watermark" />
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-[1fr_1.05fr] lg:px-8 lg:py-16">
         <div>
-          <div className="flex items-center gap-3 text-softGold">
-            <span className="grid h-14 w-14 place-items-center rounded-full border border-softGold/50 bg-white/8 p-1.5">
-              <img src={logoHuongSen} alt="Logo Hương Sen" className="h-full w-full object-contain" />
-            </span>
-            <span className="font-serif text-3xl font-bold text-white">HƯƠNG SEN</span>
+          <div className="flex items-center gap-4">
+            <img src={logoHuongSen} alt="Logo Hương Sen" className="h-20 w-24 object-contain sm:h-24 sm:w-32" />
+            <span className="font-serif text-5xl font-bold tracking-wide text-white drop-shadow-sm sm:text-6xl">HƯƠNG SEN</span>
           </div>
-          <p className="mt-4 leading-7 text-white/76">
+          <p className="mt-8 max-w-2xl text-2xl leading-[1.75] text-white/88 sm:text-3xl">
             Mang đến những sản phẩm chay ngon lành - dinh dưỡng - an toàn, vì sức khỏe và lòng từ bi.
           </p>
         </div>
+
         <div>
-          <h3 className="font-serif text-2xl font-semibold text-softGold">Liên hệ với chúng tôi</h3>
-          <div className="mt-4 space-y-3 text-sm text-white/82">
-            <p className="flex gap-3"><MapPin size={18} className="shrink-0 text-softGold" />Số 16 Cổ Điển A, Thanh Trì, Hà Nội, Việt Nam</p>
-            <a className="flex gap-3" href="tel:0981228448"><Phone size={18} className="text-softGold" />0981228448</a>
-            <a className="flex gap-3" href="mailto:huongsen.biz@gmail.com"><Mail size={18} className="text-softGold" />huongsen.biz@gmail.com</a>
-            <p>chayhuongsen.github.io</p>
+          <h3 className="font-serif text-4xl font-semibold text-softGold sm:text-5xl">Liên hệ với chúng tôi</h3>
+          <div className="mt-8 space-y-7 text-2xl text-white/88 sm:text-3xl">
+            <p className="flex gap-5">
+              <MapPin size={38} className="mt-1 shrink-0 text-softGold" />
+              <span>Số 16 Cổ Điển A, Thanh Trì, Hà Nội, Việt Nam</span>
+            </p>
+            <a className="flex gap-5 transition hover:text-softGold" href="tel:0981228448">
+              <Phone size={38} className="mt-1 shrink-0 text-softGold" />
+              <span>0981228448</span>
+            </a>
+            <a className="flex gap-5 transition hover:text-softGold" href="mailto:huongsen.biz@gmail.com">
+              <Mail size={38} className="mt-1 shrink-0 text-softGold" />
+              <span>huongsen.biz@gmail.com</span>
+            </a>
+            <p className="pl-[58px]">chayhuongsen.github.io</p>
           </div>
-        </div>
-        <div>
-          <h3 className="font-serif text-2xl font-semibold text-softGold">Kết nối với Hương Sen</h3>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {[Facebook, Youtube].map((Icon, index) => (
-              <span key={index} className="grid h-11 w-11 place-items-center rounded-full border border-softGold/50 text-softGold">
-                <Icon size={20} />
-              </span>
-            ))}
-            <span className="grid h-11 w-11 place-items-center rounded-full border border-softGold/50 text-sm font-bold text-softGold">Zalo</span>
-            <span className="grid h-11 w-11 place-items-center rounded-full border border-softGold/50 text-sm font-bold text-softGold">TT</span>
-          </div>
-          <div className="mt-5 grid h-24 w-24 place-items-center rounded-xl border border-softGold/50 bg-white/92 text-xs font-bold text-lotusGreen">QR</div>
         </div>
       </div>
       <div className="border-t border-white/12 px-4 py-4 text-center text-sm text-white/68">

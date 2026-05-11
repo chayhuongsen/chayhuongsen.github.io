@@ -1,6 +1,6 @@
 import { ArrowLeft, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoHuongSen from "../assets/images/LogoHuongSen.png";
+import logoHuongSen from "../assets/images/LogoHuongSenOK.png";
 import type { Product } from "../data/products";
 import { products } from "../data/products";
 import ProductCard from "./ProductCard";

@@ -1,7 +1,7 @@
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logoHuongSen from "../assets/images/LogoHuongSen.png";
+import logoHuongSen from "../assets/images/LogoHuongSenOK.png";
 import OrderModal from "./OrderModal";
 
 const navItems = [
