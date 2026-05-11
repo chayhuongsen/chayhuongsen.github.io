@@ -31,7 +31,10 @@ export default function Footer() {
               <Mail size={38} className="mt-1 shrink-0 text-softGold" />
               <span>huongsen.biz@gmail.com</span>
             </a>
-            <p className="pl-[58px]">chayhuongsen.github.io</p>
+            <a className="flex gap-5 transition hover:text-softGold" href="https://chayhuongsen.github.io/">
+              <img src={logoHuongSen} alt="" aria-hidden="true" className="mt-1 h-[38px] w-[38px] shrink-0 object-contain" />
+              <span>chayhuongsen.github.io</span>
+            </a>
           </div>
         </div>
       </div>
