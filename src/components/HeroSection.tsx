@@ -8,7 +8,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 1.01 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="relative mx-auto w-full max-w-[1916px] md:w-[min(1916px,calc((100svh-72px)*1916/821))] md:max-w-none"
+        className="relative mx-auto w-full max-w-[1916px]"
         style={{ aspectRatio: "1916 / 821" }}
       >
         <img
