@@ -10,11 +10,11 @@ export default function OrderModal({ open, onClose }: Props) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[80] flex items-center justify-center bg-deepGreen/55 px-4 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[80] flex items-center justify-center bg-deepGreen/55 px-4 py-6 backdrop-blur-sm">
       <motion.div
         initial={{ opacity: 0, scale: 0.94, y: 18 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        className="paper-panel relative w-full max-w-md rounded-[24px] p-7 text-center shadow-lotus"
+        className="paper-panel relative max-h-[calc(100vh-3rem)] w-full max-w-md overflow-y-auto rounded-[24px] p-6 text-center shadow-lotus sm:p-7"
       >
         <button
           aria-label="Đóng"
@@ -31,7 +31,7 @@ export default function OrderModal({ open, onClose }: Props) {
           href="tel:0981228448"
           className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-lotusGreen px-6 py-3 font-semibold text-white shadow-gold transition hover:scale-105"
         >
-          <Phone size={18} /> 0981228448
+          <Phone size={18} /> 0981 228 448
         </a>
       </motion.div>
     </div>

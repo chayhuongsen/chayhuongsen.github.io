@@ -13,6 +13,20 @@
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -21,6 +35,14 @@ body {
   background:
     linear-gradient(rgba(255, 249, 236, 0.92), rgba(255, 246, 227, 0.94)),
     repeating-linear-gradient(35deg, rgba(200, 138, 26, 0.06) 0 1px, transparent 1px 14px);
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
 }
 
 button,
@@ -76,4 +98,18 @@ textarea {
   background: radial-gradient(ellipse at center, #064e3b 0 8%, transparent 9%),
     conic-gradient(from 0deg, transparent 0 8%, #064e3b 8% 15%, transparent 15% 24%, #064e3b 24% 31%, transparent 31% 100%);
   border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .ornate-frame::before,
+  .ornate-frame::after {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lotus-watermark {
+    width: 120px;
+    height: 120px;
+    inset: auto -16px -22px auto;
+  }
 }

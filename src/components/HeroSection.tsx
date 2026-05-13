@@ -3,12 +3,12 @@ import homepageExact from "../assets/images/HuongSenHomepageExact.png";
 
 export default function HeroSection() {
   return (
-    <section className="relative grid min-h-screen place-items-center overflow-hidden bg-[#f8efd9]">
+    <section className="relative grid overflow-hidden bg-[#f8efd9] md:min-h-[calc(100svh-72px)] md:place-items-center">
       <motion.div
-        initial={{ opacity: 0, scale: 1.015 }}
+        initial={{ opacity: 0, scale: 1.01 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="relative h-screen w-[calc(100vh*1916/821)] max-w-none sm:h-auto sm:w-screen sm:max-w-[1916px]"
+        className="relative mx-auto w-full max-w-[1916px] md:w-[min(1916px,calc((100svh-72px)*1916/821))] md:max-w-none"
         style={{ aspectRatio: "1916 / 821" }}
       >
         <img
