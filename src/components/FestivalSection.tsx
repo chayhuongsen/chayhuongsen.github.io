@@ -37,11 +37,11 @@ export default function FestivalSection() {
         </div>
 
         <div className="relative min-w-0 bg-lotusGreen/48 p-6 sm:p-8 lg:p-10">
-          <div className="overflow-hidden rounded-[24px] border border-softGold/50 shadow-gold">
+          <div className="overflow-hidden rounded-[24px] border border-softGold/50 bg-lightCream shadow-gold">
             <img
               src={festivalBooth}
               alt="Gian hàng Hương Sen tại Summer Fest 2026"
-              className="aspect-[4/3] w-full object-cover"
+              className="h-auto w-full object-contain"
               loading="lazy"
             />
           </div>
