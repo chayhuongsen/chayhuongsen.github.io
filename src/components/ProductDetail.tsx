@@ -57,7 +57,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           <a href="tel:0981228448" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-lotusGreen px-6 py-3 font-semibold text-white shadow-gold transition hover:scale-105 sm:w-auto">
             <Phone size={18} /> Đặt hàng / Liên hệ
           </a>
-          <Link to="/#san-pham" className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-borderGold bg-lightCream px-6 py-3 font-semibold text-lotusGreen sm:w-auto">
+          <Link to={`/#san-pham-${product.slug}`} className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-borderGold bg-lightCream px-6 py-3 font-semibold text-lotusGreen sm:w-auto">
             <ArrowLeft size={18} /> Quay lại danh sách sản phẩm
           </Link>
         </div>

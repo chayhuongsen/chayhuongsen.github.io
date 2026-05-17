@@ -11,11 +11,12 @@ type Props = {
 export default function ProductCard({ product, index }: Props) {
   return (
     <motion.article
+      id={`san-pham-${product.slug}`}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45, delay: index * 0.06 }}
-      className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-borderGold/35 bg-white/65 shadow-[0_14px_36px_rgba(0,63,45,0.08)] transition duration-300 hover:-translate-y-1 hover:border-lotusGold hover:shadow-lotus"
+      className="group flex h-full scroll-mt-28 flex-col overflow-hidden rounded-[28px] border border-borderGold/35 bg-white/65 shadow-[0_14px_36px_rgba(0,63,45,0.08)] transition duration-300 hover:-translate-y-1 hover:border-lotusGold hover:shadow-lotus"
     >
       <Link to={`/san-pham/${product.slug}`} className="block overflow-hidden" aria-label={`Xem chi tiết ${product.name}`}>
         <img

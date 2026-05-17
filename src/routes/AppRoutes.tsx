@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ScrollToHash from "../components/ScrollToHash";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
@@ -10,6 +11,7 @@ export default function AppRoutes() {
   return (
     <>
       <Header />
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/gioi-thieu" element={<AboutPage />} />
