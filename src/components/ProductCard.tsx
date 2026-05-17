@@ -34,15 +34,6 @@ export default function ProductCard({ product, index }: Props) {
 
         <h3 className="mt-3 font-serif text-2xl font-bold text-lotusGreen">{product.name}</h3>
 
-        <p className="mt-3 line-clamp-3 text-sm leading-6 text-textDarkGreen/80 sm:text-base">
-          {product.description}
-        </p>
-
-        <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-textDarkGreen/75">
-          <span className="rounded-full bg-softGold/15 px-3 py-1.5">{product.netWeight}</span>
-          <span className="rounded-full bg-softGold/15 px-3 py-1.5">Bảo quản lạnh</span>
-        </div>
-
         <Link
           to={`/san-pham/${product.slug}`}
           className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-sm font-semibold text-lotusGreen transition hover:text-lotusGold"
