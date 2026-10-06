@@ -49,7 +49,7 @@ export default function FestivalSection() {
             <p className="font-serif text-2xl font-bold text-lotusGreen">Thông tin lễ hội</p>
             <div className="mt-3 space-y-2 text-sm leading-6">
               <p><strong>Gian hàng:</strong> Nhà Hàng Chay Hương Sen</p>
-              <p><strong>Thời gian:</strong> 20/05 - 25/05/2026</p>
+              <p><strong>Thời gian:</strong> 08/10 - 12/10/2026</p>
               <p className="flex gap-2">
                 <MapPin size={18} className="mt-0.5 shrink-0 text-lotusGold" />
                 <span>Công viên Thống Nhất, đường Trần Nhân Tông, Hà Nội</span>
