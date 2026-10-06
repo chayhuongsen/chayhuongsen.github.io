@@ -1,5 +1,5 @@
 import { Gift, MapPin, Sparkles, Truck, Utensils } from "lucide-react";
-import festivalBooth from "../assets/images/FestivalBoot2026Oct.png";
+import festivalBooth from "../assets/images/FestivalBoot2026Oct08.png";
 import BackdropSection from "./BackdropSection";
 
 const highlights = ["Nhiều ưu đãi hấp dẫn", "Quà tặng khi mua hàng", "Dùng thử miễn phí", "Giao hàng nhanh tại lễ hội"];
